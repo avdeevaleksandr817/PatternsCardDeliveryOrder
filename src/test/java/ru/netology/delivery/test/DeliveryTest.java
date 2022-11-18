@@ -2,21 +2,18 @@ package ru.netology.delivery.test;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
-import com.github.javafaker.Faker;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.openqa.selenium.Keys;
 import ru.netology.delivery.data.DataGenerator;
 
 import java.time.Duration;
-import java.util.Locale;
 
 import static com.codeborne.selenide.Selenide.*;
 import static org.openqa.selenium.Keys.BACK_SPACE;
 
 class Test {
-    private Faker faker = new Faker(new Locale("ru"));
-
     @BeforeEach
     void setUp() {
         open("http://localhost:9999");
